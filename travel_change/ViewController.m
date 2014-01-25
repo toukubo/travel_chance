@@ -46,11 +46,14 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
+    [SVProgressHUD dismiss];
     DLog(@"");
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
+    [SVProgressHUD show];
     DLog(@"");
 }
+
 @end

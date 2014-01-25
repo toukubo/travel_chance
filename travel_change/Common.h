@@ -23,7 +23,10 @@
 
 #import "UIImage+Resize.h"
 
-#import "ASIHTTPRequest.h"
+#import <ASIHTTPRequest/ASIHTTPRequest.h>
+#import <ASIHTTPRequest/ASIFormDataRequest.h>
+
+#import "SVProgressHUD.h"
 
 
 #endif
