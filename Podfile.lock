@@ -1,0 +1,55 @@
+PODS:
+  - ASIHTTPRequest (1.8.1):
+    - ASIHTTPRequest/ASIWebPageRequest
+    - ASIHTTPRequest/CloudFiles
+    - ASIHTTPRequest/S3
+    - Reachability
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.1):
+    - Reachability
+  - ASIHTTPRequest/CloudFiles (1.8.1):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.1):
+    - Reachability
+  - Harpy (2.5.2)
+  - NSTimer-Blocks (0.0.1)
+  - Reachability (3.1.1)
+  - RegexKitLite (4.0)
+  - SFHFKeychainUtils (0.0.1)
+  - SVProgressHUD (0.8.1)
+  - TestFlightSDK (2.2.1-beta)
+  - UIImage-Resize (1.0.1)
+  - UIView+Helpers (1.3.0)
+  - UIView+TKGeometry (0.2)
+  - UIViewDrawRectBlock (0.0.1)
+  - WCAlertView (1.0.1)
+
+DEPENDENCIES:
+  - ASIHTTPRequest
+  - Harpy
+  - NSTimer-Blocks
+  - RegexKitLite
+  - SFHFKeychainUtils
+  - SVProgressHUD (= 0.8.1)
+  - TestFlightSDK
+  - UIImage-Resize
+  - UIView+Helpers
+  - UIView+TKGeometry
+  - UIViewDrawRectBlock
+  - WCAlertView
+
+SPEC CHECKSUMS:
+  ASIHTTPRequest: 162783e0cd71bdd3ff1ceed0cd5fa9505e0116a8
+  Harpy: b992e16082d1ae123f4a135eacfd07a6c6e1feb7
+  NSTimer-Blocks: 99f52d61c29429d7e8ef0c82e596f317addb9421
+  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  RegexKitLite: f7af7b4d2b675cd2ec9a4abab6aad6ae1f6499c0
+  SFHFKeychainUtils: e828dbd9eaa509486acf95d8de2ebd414c4b7451
+  SVProgressHUD: 592da548680cd3613923b5f98113add52ad30cc2
+  TestFlightSDK: 4249c2f70e621bcfbdebf019073169c8fe36be13
+  UIImage-Resize: 575381c9746383a5f557bc584a538a2d2ff53c76
+  UIView+Helpers: 9a9d8c9a698b1527728af0a3b4d8572b9a8fbd14
+  UIView+TKGeometry: c206a0a89cedfb7ad7da032edca96cbcdaddbaad
+  UIViewDrawRectBlock: 20c76d72d4a903a6a1e94d27f7ad2621225f9f49
+  WCAlertView: 940e47509875d85cc42abedafc41d310007f9174
+
+COCOAPODS: 0.29.0
