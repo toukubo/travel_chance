@@ -56,4 +56,22 @@
     DLog(@"");
 }
 
+#pragma mark - Helper
+- (void)loadUrl:(NSString*)url
+{
+    // check if url malform
+    if (![self isUrlMalform:url]) {
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+        [self.webView loadRequest:request];
+    }
+}
+
+- (BOOL)isUrlMalform:(NSString*)url
+{
+    // http://stackoverflow.com/a/3819561
+    NSString *urlRegEx =
+    @"(http|https)://((\\w)*|([0-9]*)|([-|_])*)+([\\.|/]((\\w)*|([0-9]*)|([-|_])*))+";
+    NSPredicate *urlTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", urlRegEx];
+    return [urlTest evaluateWithObject:url];
+}
 @end
