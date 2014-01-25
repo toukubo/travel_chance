@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UIWebViewDelegate>
 
 @end
 
@@ -17,13 +17,40 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://google.com"]];
+    
+    [self.webView loadRequest:request];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UIWebViewDelegate
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    DLog(@"");
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    NSString *url = request.URL.absoluteString;
+    
+    DLog(@"request url - %@", url);
+    
+    return YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    DLog(@"");
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    DLog(@"");
+}
 @end

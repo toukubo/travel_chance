@@ -152,8 +152,6 @@
 				392D81C31893DE89007FB300 /* Library */,
 				3951ED111893D68500A56C32 /* AppDelegate.h */,
 				3951ED121893D68500A56C32 /* AppDelegate.m */,
-				3951ED141893D68500A56C32 /* Main_iPhone.storyboard */,
-				3951ED171893D68500A56C32 /* Main_iPad.storyboard */,
 				3951ED1A1893D68500A56C32 /* ViewController.h */,
 				3951ED1B1893D68500A56C32 /* ViewController.m */,
 				3951ED1D1893D68500A56C32 /* Images.xcassets */,
@@ -167,6 +165,8 @@
 		3951ED091893D68500A56C32 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3951ED141893D68500A56C32 /* Main_iPhone.storyboard */,
+				3951ED171893D68500A56C32 /* Main_iPad.storyboard */,
 				3951ED0A1893D68500A56C32 /* travel_change-Info.plist */,
 				3951ED0B1893D68500A56C32 /* InfoPlist.strings */,
 				3951ED0E1893D68500A56C32 /* main.m */,
