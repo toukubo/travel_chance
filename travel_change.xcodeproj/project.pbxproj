@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		392D81D91893DE89007FB300 /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 392D81C61893DE89007FB300 /* ColorUtil.m */; };
+		392D81DA1893DE89007FB300 /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 392D81C81893DE89007FB300 /* DateUtil.m */; };
+		392D81DB1893DE89007FB300 /* DeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 392D81CB1893DE89007FB300 /* DeviceUtil.m */; };
+		392D81DC1893DE89007FB300 /* GlobalCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 392D81CE1893DE89007FB300 /* GlobalCore.m */; };
+		392D81DD1893DE89007FB300 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 392D81D01893DE89007FB300 /* ImageUtils.m */; };
+		392D81DE1893DE89007FB300 /* QuartzUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 392D81D11893DE89007FB300 /* QuartzUtils.c */; };
+		392D81DF1893DE89007FB300 /* REString.m in Sources */ = {isa = PBXBuildFile; fileRef = 392D81D41893DE89007FB300 /* REString.m */; };
+		392D81E01893DE89007FB300 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 392D81D61893DE89007FB300 /* StringUtil.m */; };
+		392D81E11893DE89007FB300 /* UIDevice+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 392D81D81893DE89007FB300 /* UIDevice+Identifier.m */; };
 		3951ED031893D68500A56C32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3951ED021893D68500A56C32 /* Foundation.framework */; };
 		3951ED051893D68500A56C32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3951ED041893D68500A56C32 /* CoreGraphics.framework */; };
 		3951ED071893D68500A56C32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3951ED061893D68500A56C32 /* UIKit.framework */; };
@@ -22,6 +31,29 @@
 
 /* Begin PBXFileReference section */
 		13BE437E799B47A0A143CD09 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		392D81C11893DDD0007FB300 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		392D81C21893DDDA007FB300 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		392D81C41893DE89007FB300 /* ArcUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcUtil.h; sourceTree = "<group>"; };
+		392D81C51893DE89007FB300 /* ColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtil.h; sourceTree = "<group>"; };
+		392D81C61893DE89007FB300 /* ColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtil.m; sourceTree = "<group>"; };
+		392D81C71893DE89007FB300 /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
+		392D81C81893DE89007FB300 /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
+		392D81C91893DE89007FB300 /* DebugUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugUtils.h; sourceTree = "<group>"; };
+		392D81CA1893DE89007FB300 /* DeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUtil.h; sourceTree = "<group>"; };
+		392D81CB1893DE89007FB300 /* DeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUtil.m; sourceTree = "<group>"; };
+		392D81CC1893DE89007FB300 /* DLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLog.h; sourceTree = "<group>"; };
+		392D81CD1893DE89007FB300 /* GlobalCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalCore.h; sourceTree = "<group>"; };
+		392D81CE1893DE89007FB300 /* GlobalCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalCore.m; sourceTree = "<group>"; };
+		392D81CF1893DE89007FB300 /* ImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
+		392D81D01893DE89007FB300 /* ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
+		392D81D11893DE89007FB300 /* QuartzUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QuartzUtils.c; sourceTree = "<group>"; };
+		392D81D21893DE89007FB300 /* QuartzUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzUtils.h; sourceTree = "<group>"; };
+		392D81D31893DE89007FB300 /* REString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REString.h; sourceTree = "<group>"; };
+		392D81D41893DE89007FB300 /* REString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REString.m; sourceTree = "<group>"; };
+		392D81D51893DE89007FB300 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
+		392D81D61893DE89007FB300 /* StringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
+		392D81D71893DE89007FB300 /* UIDevice+Identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Identifier.h"; sourceTree = "<group>"; };
+		392D81D81893DE89007FB300 /* UIDevice+Identifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Identifier.m"; sourceTree = "<group>"; };
 		3951ECFF1893D68500A56C32 /* travel_change.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travel_change.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3951ED021893D68500A56C32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3951ED041893D68500A56C32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +88,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		392D81C31893DE89007FB300 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				392D81C41893DE89007FB300 /* ArcUtil.h */,
+				392D81C51893DE89007FB300 /* ColorUtil.h */,
+				392D81C61893DE89007FB300 /* ColorUtil.m */,
+				392D81C71893DE89007FB300 /* DateUtil.h */,
+				392D81C81893DE89007FB300 /* DateUtil.m */,
+				392D81C91893DE89007FB300 /* DebugUtils.h */,
+				392D81CA1893DE89007FB300 /* DeviceUtil.h */,
+				392D81CB1893DE89007FB300 /* DeviceUtil.m */,
+				392D81CC1893DE89007FB300 /* DLog.h */,
+				392D81CD1893DE89007FB300 /* GlobalCore.h */,
+				392D81CE1893DE89007FB300 /* GlobalCore.m */,
+				392D81CF1893DE89007FB300 /* ImageUtils.h */,
+				392D81D01893DE89007FB300 /* ImageUtils.m */,
+				392D81D11893DE89007FB300 /* QuartzUtils.c */,
+				392D81D21893DE89007FB300 /* QuartzUtils.h */,
+				392D81D31893DE89007FB300 /* REString.h */,
+				392D81D41893DE89007FB300 /* REString.m */,
+				392D81D51893DE89007FB300 /* StringUtil.h */,
+				392D81D61893DE89007FB300 /* StringUtil.m */,
+				392D81D71893DE89007FB300 /* UIDevice+Identifier.h */,
+				392D81D81893DE89007FB300 /* UIDevice+Identifier.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		3951ECF61893D68500A56C32 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +149,7 @@
 		3951ED081893D68500A56C32 /* travel_change */ = {
 			isa = PBXGroup;
 			children = (
+				392D81C31893DE89007FB300 /* Library */,
 				3951ED111893D68500A56C32 /* AppDelegate.h */,
 				3951ED121893D68500A56C32 /* AppDelegate.m */,
 				3951ED141893D68500A56C32 /* Main_iPhone.storyboard */,
@@ -97,6 +158,8 @@
 				3951ED1B1893D68500A56C32 /* ViewController.m */,
 				3951ED1D1893D68500A56C32 /* Images.xcassets */,
 				3951ED091893D68500A56C32 /* Supporting Files */,
+				392D81C11893DDD0007FB300 /* Constant.h */,
+				392D81C21893DDDA007FB300 /* Common.h */,
 			);
 			path = travel_change;
 			sourceTree = "<group>";
@@ -213,9 +276,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392D81DC1893DE89007FB300 /* GlobalCore.m in Sources */,
+				392D81DE1893DE89007FB300 /* QuartzUtils.c in Sources */,
 				3951ED1C1893D68500A56C32 /* ViewController.m in Sources */,
+				392D81E01893DE89007FB300 /* StringUtil.m in Sources */,
+				392D81E11893DE89007FB300 /* UIDevice+Identifier.m in Sources */,
+				392D81DF1893DE89007FB300 /* REString.m in Sources */,
+				392D81DA1893DE89007FB300 /* DateUtil.m in Sources */,
+				392D81DD1893DE89007FB300 /* ImageUtils.m in Sources */,
 				3951ED131893D68500A56C32 /* AppDelegate.m in Sources */,
+				392D81DB1893DE89007FB300 /* DeviceUtil.m in Sources */,
 				3951ED0F1893D68500A56C32 /* main.m in Sources */,
+				392D81D91893DE89007FB300 /* ColorUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
