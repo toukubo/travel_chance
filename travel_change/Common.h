@@ -27,6 +27,6 @@
 #import <ASIHTTPRequest/ASIFormDataRequest.h>
 
 #import "SVProgressHUD.h"
-
+#import "RegexKitLite.h"
 
 #endif

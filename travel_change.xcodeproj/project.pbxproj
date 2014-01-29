@@ -16,6 +16,7 @@
 		392D81DF1893DE89007FB300 /* REString.m in Sources */ = {isa = PBXBuildFile; fileRef = 392D81D41893DE89007FB300 /* REString.m */; };
 		392D81E01893DE89007FB300 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 392D81D61893DE89007FB300 /* StringUtil.m */; };
 		392D81E11893DE89007FB300 /* UIDevice+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 392D81D81893DE89007FB300 /* UIDevice+Identifier.m */; };
+		394FD79F1898CBD7002E8897 /* WebClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 394FD79E1898CBD7002E8897 /* WebClient.m */; };
 		3951ED031893D68500A56C32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3951ED021893D68500A56C32 /* Foundation.framework */; };
 		3951ED051893D68500A56C32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3951ED041893D68500A56C32 /* CoreGraphics.framework */; };
 		3951ED071893D68500A56C32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3951ED061893D68500A56C32 /* UIKit.framework */; };
@@ -54,6 +55,8 @@
 		392D81D61893DE89007FB300 /* StringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
 		392D81D71893DE89007FB300 /* UIDevice+Identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Identifier.h"; sourceTree = "<group>"; };
 		392D81D81893DE89007FB300 /* UIDevice+Identifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Identifier.m"; sourceTree = "<group>"; };
+		394FD79D1898CBD7002E8897 /* WebClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebClient.h; sourceTree = "<group>"; };
+		394FD79E1898CBD7002E8897 /* WebClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebClient.m; sourceTree = "<group>"; };
 		3951ECFF1893D68500A56C32 /* travel_change.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travel_change.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3951ED021893D68500A56C32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3951ED041893D68500A56C32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -158,6 +161,8 @@
 				3951ED091893D68500A56C32 /* Supporting Files */,
 				392D81C11893DDD0007FB300 /* Constant.h */,
 				392D81C21893DDDA007FB300 /* Common.h */,
+				394FD79D1898CBD7002E8897 /* WebClient.h */,
+				394FD79E1898CBD7002E8897 /* WebClient.m */,
 			);
 			path = travel_change;
 			sourceTree = "<group>";
@@ -205,6 +210,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "ap-com";
+				TargetAttributes = {
+					3951ECFE1893D68500A56C32 = {
+						DevelopmentTeam = P33X2KKCL6;
+					};
+				};
 			};
 			buildConfigurationList = 3951ECFA1893D68500A56C32 /* Build configuration list for PBXProject "travel_change" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -285,6 +295,7 @@
 				392D81DA1893DE89007FB300 /* DateUtil.m in Sources */,
 				392D81DD1893DE89007FB300 /* ImageUtils.m in Sources */,
 				3951ED131893D68500A56C32 /* AppDelegate.m in Sources */,
+				394FD79F1898CBD7002E8897 /* WebClient.m in Sources */,
 				392D81DB1893DE89007FB300 /* DeviceUtil.m in Sources */,
 				3951ED0F1893D68500A56C32 /* main.m in Sources */,
 				392D81D91893DE89007FB300 /* ColorUtil.m in Sources */,
@@ -401,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "travel_change/travel_change-Prefix.pch";
 				INFOPLIST_FILE = "travel_change/travel_change-Info.plist";
@@ -416,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "travel_change/travel_change-Prefix.pch";
 				INFOPLIST_FILE = "travel_change/travel_change-Info.plist";
