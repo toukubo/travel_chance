@@ -124,18 +124,10 @@
 		392E31E11898E87600FDD5EA /* jp */ = {
 			isa = PBXGroup;
 			children = (
-				392E32351898EAC000FDD5EA /* Common.h */,
-				392E32361898EAC000FDD5EA /* Constant.h */,
-				392E32321898EAB900FDD5EA /* WebClient.h */,
-				392E32331898EAB900FDD5EA /* WebClient.m */,
 				392E32131898EAB300FDD5EA /* Library */,
-				392E31EA1898E87600FDD5EA /* AppDelegate.h */,
-				392E31EB1898E87600FDD5EA /* AppDelegate.m */,
-				392E31ED1898E87600FDD5EA /* Main_iPhone.storyboard */,
-				392E31F01898E87600FDD5EA /* Main_iPad.storyboard */,
-				392E31F31898E87600FDD5EA /* ViewController.h */,
-				392E31F41898E87600FDD5EA /* ViewController.m */,
-				392E31F61898E87600FDD5EA /* Images.xcassets */,
+				392E32391898ED5000FDD5EA /* Global */,
+				392E32371898ED3A00FDD5EA /* Application */,
+				392E32381898ED4200FDD5EA /* Controller */,
 				392E31E21898E87600FDD5EA /* Supporting Files */,
 			);
 			path = jp;
@@ -144,6 +136,9 @@
 		392E31E21898E87600FDD5EA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				392E31F61898E87600FDD5EA /* Images.xcassets */,
+				392E31ED1898E87600FDD5EA /* Main_iPhone.storyboard */,
+				392E31F01898E87600FDD5EA /* Main_iPad.storyboard */,
 				392E31E31898E87600FDD5EA /* jp-Info.plist */,
 				392E31E41898E87600FDD5EA /* InfoPlist.strings */,
 				392E31E71898E87600FDD5EA /* main.m */,
@@ -178,6 +173,35 @@
 				392E32281898EAB300FDD5EA /* UIDevice+Identifier.m */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		392E32371898ED3A00FDD5EA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				392E31EA1898E87600FDD5EA /* AppDelegate.h */,
+				392E31EB1898E87600FDD5EA /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		392E32381898ED4200FDD5EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				392E31F31898E87600FDD5EA /* ViewController.h */,
+				392E31F41898E87600FDD5EA /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		392E32391898ED5000FDD5EA /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				392E32351898EAC000FDD5EA /* Common.h */,
+				392E32361898EAC000FDD5EA /* Constant.h */,
+				392E32321898EAB900FDD5EA /* WebClient.h */,
+				392E32331898EAB900FDD5EA /* WebClient.m */,
+			);
+			name = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
