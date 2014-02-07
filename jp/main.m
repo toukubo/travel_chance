@@ -1,9 +1,9 @@
 //
 //  main.m
-//  travel_change
+//  jp
 //
-//  Created by veiz on 14-1-25.
-//  Copyright (c) 2014年 ap-com. All rights reserved.
+//  Created by Alsor Zhou on 1/29/14.
+//  Copyright (c) 2014 ap-com.co.jp. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
