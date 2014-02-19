@@ -29,4 +29,6 @@
 #import "SVProgressHUD.h"
 #import "RegexKitLite.h"
 
+#import "NSHTTPCookieStorage+FreezeDry.h"
+
 #endif

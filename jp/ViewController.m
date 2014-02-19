@@ -88,4 +88,12 @@
     
     return NO;
 }
+
+#pragma mark - Cookie Helper
+- (void)executeJobWhileCookieChanged:(UIWebView*)webview
+{
+    DLog(@"executeJobWhileCookieChanged");
+    
+    [[NSHTTPCookieStorage sharedHTTPCookieStorage] save];
+}
 @end

@@ -9,6 +9,6 @@
 #ifndef travel_change_Constant_h
 #define travel_change_Constant_h
 
-#define kBaseUrl                    @"http://zxc.cz/travel_chance_wp/"
+#define kBaseUrl                    @"http://travelchance.apctdl.com/travel_chance_wp"
 #define kFakeDeviceToken            @"FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
 #endif

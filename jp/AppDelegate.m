@@ -13,6 +13,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // recreate webview cookie
+    [[NSHTTPCookieStorage sharedHTTPCookieStorage] load];
+    
     return YES;
 }
 							

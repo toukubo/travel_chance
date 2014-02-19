@@ -27,6 +27,7 @@
 		392E32301898EAB300FDD5EA /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 392E32261898EAB300FDD5EA /* StringUtil.m */; };
 		392E32311898EAB300FDD5EA /* UIDevice+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 392E32281898EAB300FDD5EA /* UIDevice+Identifier.m */; };
 		392E32341898EAB900FDD5EA /* WebClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 392E32331898EAB900FDD5EA /* WebClient.m */; };
+		395B51C618B4DF61007648D1 /* NSHTTPCookieStorage+FreezeDry.m in Sources */ = {isa = PBXBuildFile; fileRef = 395B51C518B4DF61007648D1 /* NSHTTPCookieStorage+FreezeDry.m */; };
 		3C04AB61DF584C4EA2F6EEAB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB91C6B2704E497C8B91EF52 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,8 @@
 		392E32331898EAB900FDD5EA /* WebClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebClient.m; sourceTree = "<group>"; };
 		392E32351898EAC000FDD5EA /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		392E32361898EAC000FDD5EA /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		395B51C418B4DF61007648D1 /* NSHTTPCookieStorage+FreezeDry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPCookieStorage+FreezeDry.h"; sourceTree = "<group>"; };
+		395B51C518B4DF61007648D1 /* NSHTTPCookieStorage+FreezeDry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPCookieStorage+FreezeDry.m"; sourceTree = "<group>"; };
 		74EBC08B4034441295120F52 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FB91C6B2704E497C8B91EF52 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -150,6 +153,8 @@
 		392E32131898EAB300FDD5EA /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				395B51C418B4DF61007648D1 /* NSHTTPCookieStorage+FreezeDry.h */,
+				395B51C518B4DF61007648D1 /* NSHTTPCookieStorage+FreezeDry.m */,
 				392E32141898EAB300FDD5EA /* ArcUtil.h */,
 				392E32151898EAB300FDD5EA /* ColorUtil.h */,
 				392E32161898EAB300FDD5EA /* ColorUtil.m */,
@@ -306,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				392E322C1898EAB300FDD5EA /* GlobalCore.m in Sources */,
+				395B51C618B4DF61007648D1 /* NSHTTPCookieStorage+FreezeDry.m in Sources */,
 				392E322E1898EAB300FDD5EA /* QuartzUtils.c in Sources */,
 				392E31F51898E87600FDD5EA /* ViewController.m in Sources */,
 				392E32301898EAB300FDD5EA /* StringUtil.m in Sources */,
