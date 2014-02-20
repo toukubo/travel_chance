@@ -31,15 +31,17 @@
 }
 
 #pragma mark - UIWebViewDelegate
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+- (void)webView:(UIWebView *)theWebView didFailLoadWithError:(NSError *)error
 {
     DLog(@"");
 }
 
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+- (BOOL)webView:(UIWebView *)theWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     NSString *urlString = request.URL.absoluteString;
     DLog(@"request url - %@", urlString);
+    
+    [self executeJobWhileCookieChanged:theWebView];
     
     if ([self needOpenExternalSafari:urlString]) {
         [WebClient openSafari:urlString];
@@ -49,13 +51,13 @@
     return YES;
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView
+- (void)webViewDidFinishLoad:(UIWebView *)theWebView
 {
     [SVProgressHUD dismiss];
     DLog(@"");
 }
 
-- (void)webViewDidStartLoad:(UIWebView *)webView
+- (void)webViewDidStartLoad:(UIWebView *)theWebView
 {
     [SVProgressHUD show];
     DLog(@"");
@@ -90,7 +92,7 @@
 }
 
 #pragma mark - Cookie Helper
-- (void)executeJobWhileCookieChanged:(UIWebView*)webview
+- (void)executeJobWhileCookieChanged:(UIWebView*)theWebView
 {
     DLog(@"executeJobWhileCookieChanged");
     
