@@ -14,6 +14,8 @@
 {
     // Override point for customization after application launch.
     
+    self.deviceHexToken = kFakeDeviceToken;
+    
     // recreate webview cookie
     [[NSHTTPCookieStorage sharedHTTPCookieStorage] load];
     

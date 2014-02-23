@@ -10,5 +10,5 @@
 #define travel_change_Constant_h
 
 #define kBaseUrl                    @"http://travelchance.apctdl.com/travel_chance_wp"
-#define kFakeDeviceToken            @"FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+#define kFakeDeviceToken            @"FAKEDEVICETOKENFAKEDEVICETOKEN"
 #endif

@@ -31,4 +31,6 @@
 
 #import "NSHTTPCookieStorage+FreezeDry.h"
 
+#import "AppDelegate.h"
+
 #endif

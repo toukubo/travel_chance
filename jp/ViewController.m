@@ -41,11 +41,22 @@
     NSString *urlString = request.URL.absoluteString;
     DLog(@"request url - %@", urlString);
     
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
     [self executeJobWhileCookieChanged:theWebView];
     
     if ([self needOpenExternalSafari:urlString]) {
         [WebClient openSafari:urlString];
         return NO;
+    } else if ([urlString isMatchedByRegex:@"/Login"] || [urlString isMatchedByRegex:@"/Registration"]) {
+        if ([urlString isMatchedByRegex:@"device_token="]) {
+            return NO;
+        } else {
+            urlString = [NSString stringWithFormat:@"%@?device_token=%@", urlString, appDelegate.deviceHexToken];
+            DLog(@"URL : %@", urlString);
+            
+            [self loadUrl:urlString];
+        }
     }
     
     return YES;
