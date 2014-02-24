@@ -19,6 +19,8 @@
     // recreate webview cookie
     [[NSHTTPCookieStorage sharedHTTPCookieStorage] load];
     
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes: UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound];
+    
     return YES;
 }
 							
