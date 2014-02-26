@@ -33,4 +33,6 @@
 
 #import "AppDelegate.h"
 
+#import "TestFlight.h"
+
 #endif
