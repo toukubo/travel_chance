@@ -16,6 +16,8 @@
     
     self.deviceHexToken = kFakeDeviceToken;
     
+    [TestFlight takeOff:@"d7ca67a5-5e5a-46d6-bbdd-8d631f9a5bfe"];
+    
     // recreate webview cookie
     [[NSHTTPCookieStorage sharedHTTPCookieStorage] load];
     
@@ -63,6 +65,7 @@
     DLog(@"Push notification registered success with token : %@", hexToken);
     
     self.deviceHexToken = hexToken;
+    [TestFlight passCheckpoint:[NSString stringWithFormat:@"Device Token - %@", hexToken]];
 }
 
 - (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err
