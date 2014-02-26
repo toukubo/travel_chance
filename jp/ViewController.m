@@ -33,7 +33,7 @@
 #pragma mark - UIWebViewDelegate
 - (void)webView:(UIWebView *)theWebView didFailLoadWithError:(NSError *)error
 {
-    DLog(@"");
+
 }
 
 - (BOOL)webView:(UIWebView *)theWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
@@ -52,8 +52,12 @@
         if ([urlString isMatchedByRegex:@"device_token="]) {
             return NO;
         } else {
+            // remove the trailing slash of request url
+            if ([[urlString substringFromIndex:[urlString length] - 1] isEqualToString:@"/"]) {
+                urlString = [urlString substringToIndex:[urlString length] - 1];
+            }
+            
             urlString = [NSString stringWithFormat:@"%@?device_token=%@", urlString, appDelegate.deviceHexToken];
-            DLog(@"URL : %@", urlString);
             
             [self loadUrl:urlString];
         }
@@ -65,13 +69,11 @@
 - (void)webViewDidFinishLoad:(UIWebView *)theWebView
 {
     [SVProgressHUD dismiss];
-    DLog(@"");
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)theWebView
 {
     [SVProgressHUD show];
-    DLog(@"");
 }
 
 #pragma mark - Helper
@@ -105,8 +107,6 @@
 #pragma mark - Cookie Helper
 - (void)executeJobWhileCookieChanged:(UIWebView*)theWebView
 {
-    DLog(@"executeJobWhileCookieChanged");
-    
     [[NSHTTPCookieStorage sharedHTTPCookieStorage] save];
 }
 @end
