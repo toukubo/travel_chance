@@ -16,7 +16,7 @@
     
     self.deviceHexToken = kFakeDeviceToken;
     
-    [TestFlight takeOff:@"d7ca67a5-5e5a-46d6-bbdd-8d631f9a5bfe"];
+    [TestFlight takeOff:@"dad14a44-3d59-4885-a6c6-6cc8755dee74"];
     
     // recreate webview cookie
     [[NSHTTPCookieStorage sharedHTTPCookieStorage] load];
