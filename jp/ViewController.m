@@ -19,10 +19,13 @@
 {
     [super viewDidLoad];
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:kBaseUrl]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:kBaseUrl]];
+    
+    NSArray *storedCookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
+    NSDictionary *cookies = [NSHTTPCookie requestHeaderFieldsWithCookies:storedCookies];
+    [request setAllHTTPHeaderFields:cookies];
     
     [self.webView loadRequest:request];
-    
 }
 
 - (void)didReceiveMemoryWarning
