@@ -16,7 +16,6 @@
 		392E31EF1898E87600FDD5EA /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392E31ED1898E87600FDD5EA /* Main_iPhone.storyboard */; };
 		392E31F21898E87600FDD5EA /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392E31F01898E87600FDD5EA /* Main_iPad.storyboard */; };
 		392E31F51898E87600FDD5EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392E31F41898E87600FDD5EA /* ViewController.m */; };
-		392E31F71898E87600FDD5EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392E31F61898E87600FDD5EA /* Images.xcassets */; };
 		392E32291898EAB300FDD5EA /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 392E32161898EAB300FDD5EA /* ColorUtil.m */; };
 		392E322A1898EAB300FDD5EA /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 392E32181898EAB300FDD5EA /* DateUtil.m */; };
 		392E322B1898EAB300FDD5EA /* DeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 392E321B1898EAB300FDD5EA /* DeviceUtil.m */; };
@@ -27,6 +26,7 @@
 		392E32301898EAB300FDD5EA /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 392E32261898EAB300FDD5EA /* StringUtil.m */; };
 		392E32311898EAB300FDD5EA /* UIDevice+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 392E32281898EAB300FDD5EA /* UIDevice+Identifier.m */; };
 		392E32341898EAB900FDD5EA /* WebClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 392E32331898EAB900FDD5EA /* WebClient.m */; };
+		394EFB9D191A6C7100F63270 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 394EFB9C191A6C7100F63270 /* Images.xcassets */; };
 		395B51C618B4DF61007648D1 /* NSHTTPCookieStorage+FreezeDry.m in Sources */ = {isa = PBXBuildFile; fileRef = 395B51C518B4DF61007648D1 /* NSHTTPCookieStorage+FreezeDry.m */; };
 		3C04AB61DF584C4EA2F6EEAB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB91C6B2704E497C8B91EF52 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -46,7 +46,6 @@
 		392E31F11898E87600FDD5EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		392E31F31898E87600FDD5EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		392E31F41898E87600FDD5EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		392E31F61898E87600FDD5EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		392E31FD1898E87600FDD5EA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		392E32141898EAB300FDD5EA /* ArcUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcUtil.h; sourceTree = "<group>"; };
 		392E32151898EAB300FDD5EA /* ColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtil.h; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		392E32331898EAB900FDD5EA /* WebClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebClient.m; sourceTree = "<group>"; };
 		392E32351898EAC000FDD5EA /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		392E32361898EAC000FDD5EA /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		394EFB9C191A6C7100F63270 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		395B51C418B4DF61007648D1 /* NSHTTPCookieStorage+FreezeDry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPCookieStorage+FreezeDry.h"; sourceTree = "<group>"; };
 		395B51C518B4DF61007648D1 /* NSHTTPCookieStorage+FreezeDry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPCookieStorage+FreezeDry.m"; sourceTree = "<group>"; };
 		74EBC08B4034441295120F52 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -131,6 +131,7 @@
 				392E32391898ED5000FDD5EA /* Global */,
 				392E32371898ED3A00FDD5EA /* Application */,
 				392E32381898ED4200FDD5EA /* Controller */,
+				394EFB9C191A6C7100F63270 /* Images.xcassets */,
 				392E31E21898E87600FDD5EA /* Supporting Files */,
 			);
 			path = jp;
@@ -139,7 +140,6 @@
 		392E31E21898E87600FDD5EA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				392E31F61898E87600FDD5EA /* Images.xcassets */,
 				392E31ED1898E87600FDD5EA /* Main_iPhone.storyboard */,
 				392E31F01898E87600FDD5EA /* Main_iPad.storyboard */,
 				392E31E31898E87600FDD5EA /* jp-Info.plist */,
@@ -237,7 +237,7 @@
 		392E31D01898E87600FDD5EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "ap-com.co.jp";
 			};
 			buildConfigurationList = 392E31D31898E87600FDD5EA /* Build configuration list for PBXProject "jp" */;
@@ -263,8 +263,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394EFB9D191A6C7100F63270 /* Images.xcassets in Resources */,
 				392E31F21898E87600FDD5EA /* Main_iPad.storyboard in Resources */,
-				392E31F71898E87600FDD5EA /* Images.xcassets in Resources */,
 				392E31EF1898E87600FDD5EA /* Main_iPhone.storyboard in Resources */,
 				392E31E61898E87600FDD5EA /* InfoPlist.strings in Resources */,
 			);
@@ -361,7 +361,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -401,7 +400,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -443,6 +441,7 @@
 				INFOPLIST_FILE = "jp/jp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "CB3591D1-9C50-47C2-A924-18C5B698B1D4";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -458,7 +457,8 @@
 				GCC_PREFIX_HEADER = "jp/jp-Prefix.pch";
 				INFOPLIST_FILE = "jp/jp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "85B375DA-49BC-42E5-9596-772154346D3A";
+				PROVISIONING_PROFILE = "B83DAD8C-8583-46B5-A225-44AD4466FBBF";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

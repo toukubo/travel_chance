@@ -581,17 +581,17 @@ static inline UIImage* createRoundedCornerMask(CGRect rect, CGFloat radius_tl, C
 {
     UIView *snapshot;
     
-    if ([self respondsToSelector:@selector(snapshotView)])
-    {
-        snapshot = [self performSelector:@selector(snapshotView)];
-    }
-    
-    else
-    {
-        UIImage *image = [self snapshotImage];
-        snapshot = [[UIImageView alloc] initWithImage:image];
-        [snapshot setFrame:[self bounds]];
-    }
+//    if ([self respondsToSelector:@selector(snapshotView)])
+//    {
+//        snapshot = [self performSelector:@selector(snapshotView)];
+//    }
+//    
+//    else
+//    {
+//        UIImage *image = [self snapshotImage];
+//        snapshot = [[UIImageView alloc] initWithImage:image];
+//        [snapshot setFrame:[self bounds]];
+//    }
     
     return snapshot;
 }
