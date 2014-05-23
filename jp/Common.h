@@ -34,5 +34,5 @@
 #import "AppDelegate.h"
 
 #import "TestFlight.h"
-
+#import "NSTimer+Blocks.h"
 #endif
