@@ -40,3 +40,5 @@ pod 'RegexKitLite'
 
 # Helpful utilities for UIColor for iPhone.
 pod 'UIColor-Utilities'
+
+pod 'YISplashScreen', '~> 1.2.1'
