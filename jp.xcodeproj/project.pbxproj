@@ -97,16 +97,6 @@
 		394EFB9C191A6C7100F63270 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		395B51C418B4DF61007648D1 /* NSHTTPCookieStorage+FreezeDry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPCookieStorage+FreezeDry.h"; sourceTree = "<group>"; };
 		395B51C518B4DF61007648D1 /* NSHTTPCookieStorage+FreezeDry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPCookieStorage+FreezeDry.m"; sourceTree = "<group>"; };
-		39825BA21929CB7D0014A08B /* testflight-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testflight-Info.plist"; sourceTree = "<group>"; };
-		39825BA41929CB7D0014A08B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		39825BA61929CB7D0014A08B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		39825BA81929CB7D0014A08B /* testflight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testflight-Prefix.pch"; sourceTree = "<group>"; };
-		39825BA91929CB7D0014A08B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		39825BAA1929CB7D0014A08B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		39825BAC1929CB7D0014A08B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		39825BBA1929CB7D0014A08B /* testflightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testflightTests-Info.plist"; sourceTree = "<group>"; };
-		39825BBC1929CB7D0014A08B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		39825BBE1929CB7D0014A08B /* testflightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testflightTests.m; sourceTree = "<group>"; };
 		39825BE51929CBB70014A08B /* jp copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jp copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39825BE61929CBB70014A08B /* jp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "jp copy-Info.plist"; path = "/Volumes/Data/LanceProject/KojiToukubo/travel_chance/jp copy-Info.plist"; sourceTree = "<absolute>"; };
 		74EBC08B4034441295120F52 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -143,8 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				392E31E11898E87600FDD5EA /* jp */,
-				39825BA01929CB7D0014A08B /* testflight */,
-				39825BB81929CB7D0014A08B /* testflightTests */,
 				392E31DA1898E87600FDD5EA /* Frameworks */,
 				392E31D91898E87600FDD5EA /* Products */,
 				74EBC08B4034441295120F52 /* Pods.xcconfig */,
@@ -256,46 +244,6 @@
 				392E32331898EAB900FDD5EA /* WebClient.m */,
 			);
 			name = Global;
-			sourceTree = "<group>";
-		};
-		39825BA01929CB7D0014A08B /* testflight */ = {
-			isa = PBXGroup;
-			children = (
-				39825BA91929CB7D0014A08B /* AppDelegate.h */,
-				39825BAA1929CB7D0014A08B /* AppDelegate.m */,
-				39825BAC1929CB7D0014A08B /* Images.xcassets */,
-				39825BA11929CB7D0014A08B /* Supporting Files */,
-			);
-			path = testflight;
-			sourceTree = "<group>";
-		};
-		39825BA11929CB7D0014A08B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				39825BA21929CB7D0014A08B /* testflight-Info.plist */,
-				39825BA31929CB7D0014A08B /* InfoPlist.strings */,
-				39825BA61929CB7D0014A08B /* main.m */,
-				39825BA81929CB7D0014A08B /* testflight-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		39825BB81929CB7D0014A08B /* testflightTests */ = {
-			isa = PBXGroup;
-			children = (
-				39825BBE1929CB7D0014A08B /* testflightTests.m */,
-				39825BB91929CB7D0014A08B /* Supporting Files */,
-			);
-			path = testflightTests;
-			sourceTree = "<group>";
-		};
-		39825BB91929CB7D0014A08B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				39825BBA1929CB7D0014A08B /* testflightTests-Info.plist */,
-				39825BBB1929CB7D0014A08B /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,22 +471,6 @@
 				392E31F11898E87600FDD5EA /* Base */,
 			);
 			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		39825BA31929CB7D0014A08B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				39825BA41929CB7D0014A08B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		39825BBB1929CB7D0014A08B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				39825BBC1929CB7D0014A08B /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

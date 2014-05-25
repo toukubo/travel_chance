@@ -36,22 +36,32 @@
 #pragma mark - UIWebViewDelegate
 - (void)webView:(UIWebView *)theWebView didFailLoadWithError:(NSError *)error
 {
-
+    
 }
 
 - (BOOL)webView:(UIWebView *)theWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     NSString *urlString = request.URL.absoluteString;
     DLog(@"request url - %@", urlString);
-    
-    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    DLog(@"cookie - %@", request.allHTTPHeaderFields);
     
     [self executeJobWhileCookieChanged:theWebView];
+    
+    if (([[[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies] count] >= 3) &&       // cookie should have at least 3 fields, PHPSESSID, user, users_id
+        IsEmpty(request.allHTTPHeaderFields[@"Cookie"])) {
+        
+        DLog(@"Empty cookie in request");
+        [self loadUrl:urlString];
+        
+        return NO;
+    }
+    
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
     if ([self needOpenExternalSafari:urlString]) {
         [WebClient openSafari:urlString];
         return NO;
-    } else if ([urlString isMatchedByRegex:@"/Login"] || [urlString isMatchedByRegex:@"/Registration"]) {
+    } else if ([urlString isMatchedByRegex:@"/login"] || [urlString isMatchedByRegex:@"/Registration"]) {
         if ([urlString isMatchedByRegex:@"device_token="]) {
             return NO;
         } else {
@@ -83,10 +93,13 @@
 - (void)loadUrl:(NSString*)url
 {
     // check if url malform
-    if (![self isUrlMalform:url]) {
-        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
-        [self.webView loadRequest:request];
-    }
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
+    
+    NSArray *storedCookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
+    NSDictionary *cookies = [NSHTTPCookie requestHeaderFieldsWithCookies:storedCookies];
+    [request setAllHTTPHeaderFields:cookies];
+    
+    [self.webView loadRequest:request];
 }
 
 - (BOOL)isUrlMalform:(NSString*)url
@@ -110,6 +123,8 @@
 #pragma mark - Cookie Helper
 - (void)executeJobWhileCookieChanged:(UIWebView*)theWebView
 {
+    DLog(@"%@", [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]);
+    
     [[NSHTTPCookieStorage sharedHTTPCookieStorage] save];
 }
 @end
