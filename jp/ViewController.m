@@ -19,6 +19,11 @@
 {
     [super viewDidLoad];
     
+    // http://stackoverflow.com/questions/18103715/navigation-bar-appear-over-the-views-with-new-ios7-sdk
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+    
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:kBaseUrl]];
     
     NSArray *storedCookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
