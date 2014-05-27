@@ -11,4 +11,11 @@
 
 #define kBaseUrl                    @"http://travelchance.apctdl.com/travel_chance_wp"
 #define kFakeDeviceToken            @"FAKEDEVICETOKENFAKEDEVICETOKEN"
+
+#define kWSApiRegister              @"/registration"
+#define kWSApiLogin                 @"/login"
+#define kWSApiLogout                @"/logout"
+
+
 #endif
+

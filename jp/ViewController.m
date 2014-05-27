@@ -61,7 +61,7 @@
     if ([self needOpenExternalSafari:urlString]) {
         [WebClient openSafari:urlString];
         return NO;
-    } else if ([urlString isMatchedByRegex:@"/login"] || [urlString isMatchedByRegex:@"/Registration"]) {
+    } else if ([urlString isMatchedByRegex:kWSApiLogin] || [urlString isMatchedByRegex:kWSApiRegister]) {
         if ([urlString isMatchedByRegex:@"device_token="]) {
             return NO;
         } else {
@@ -73,6 +73,12 @@
             urlString = [NSString stringWithFormat:@"%@?device_token=%@", urlString, appDelegate.deviceHexToken];
             
             [self loadUrl:urlString];
+        }
+    } else if ([urlString isMatchedByRegex:kWSApiLogout]) {
+        NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+        NSArray *storedCookies = [cookieStorage cookies];
+        for (NSHTTPCookie *cookie in storedCookies) {
+            [cookieStorage deleteCookie:cookie];
         }
     }
     
@@ -123,7 +129,7 @@
 #pragma mark - Cookie Helper
 - (void)executeJobWhileCookieChanged:(UIWebView*)theWebView
 {
-    DLog(@"%@", [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]);
+//    DLog(@"%@", [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]);
     
     [[NSHTTPCookieStorage sharedHTTPCookieStorage] save];
 }
