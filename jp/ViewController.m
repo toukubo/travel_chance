@@ -10,7 +10,9 @@
 #import "WebClient.h"
 
 @interface ViewController () <UIWebViewDelegate>
-
+{
+    BOOL    didSubmitDeviceToken;
+}
 @end
 
 @implementation ViewController
@@ -18,6 +20,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    didSubmitDeviceToken = false;
     
     // http://stackoverflow.com/questions/18103715/navigation-bar-appear-over-the-views-with-new-ios7-sdk
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
@@ -48,7 +52,7 @@
 {
     NSString *urlString = request.URL.absoluteString;
     DLog(@"request url - %@", urlString);
-    DLog(@"cookie - %@", request.allHTTPHeaderFields);
+//    DLog(@"cookie - %@", request.allHTTPHeaderFields);
     
     [self executeJobWhileCookieChanged:theWebView];
     
@@ -68,16 +72,20 @@
         return NO;
     } else if ([urlString isMatchedByRegex:kWSApiLogin] || [urlString isMatchedByRegex:kWSApiRegister]) {
         if ([urlString isMatchedByRegex:@"device_token="]) {
-            return NO;
+            return YES;
         } else {
-            // remove the trailing slash of request url
-            if ([[urlString substringFromIndex:[urlString length] - 1] isEqualToString:@"/"]) {
-                urlString = [urlString substringToIndex:[urlString length] - 1];
+//            // remove the trailing slash of request url
+//            if ([[urlString substringFromIndex:[urlString length] - 1] isEqualToString:@"/"]) {
+//                urlString = [urlString substringToIndex:[urlString length] - 1];
+//            }
+            if (!didSubmitDeviceToken) {
+                urlString = [NSString stringWithFormat:@"%@?device_token=%@", urlString, appDelegate.deviceHexToken];
+                
+                [self loadUrl:urlString];
+                
+                didSubmitDeviceToken = true;
             }
-            
-            urlString = [NSString stringWithFormat:@"%@?device_token=%@", urlString, appDelegate.deviceHexToken];
-            
-            [self loadUrl:urlString];
+
         }
     } else if ([urlString isMatchedByRegex:kWSApiLogout]) {
         NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
@@ -85,6 +93,7 @@
         for (NSHTTPCookie *cookie in storedCookies) {
             [cookieStorage deleteCookie:cookie];
         }
+        [[NSUserDefaults standardUserDefaults] synchronize];
     }
     
     return YES;
