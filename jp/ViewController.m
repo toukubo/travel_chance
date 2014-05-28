@@ -21,7 +21,7 @@
 {
     [super viewDidLoad];
     
-    didSubmitDeviceToken = false;
+    didSubmitDeviceToken = NO;
     
     // http://stackoverflow.com/questions/18103715/navigation-bar-appear-over-the-views-with-new-ios7-sdk
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
@@ -83,7 +83,7 @@
                 
                 [self loadUrl:urlString];
                 
-                didSubmitDeviceToken = true;
+                didSubmitDeviceToken = YES;
             }
 
         }
@@ -94,6 +94,8 @@
             [cookieStorage deleteCookie:cookie];
         }
         [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        didSubmitDeviceToken = NO;
     }
     
     return YES;
